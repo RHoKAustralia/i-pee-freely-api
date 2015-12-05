@@ -14,6 +14,8 @@ CSV.foreach("changingPlaces.csv") do |row|
   notes = ""
   openingHours = ""
 
+  fakeLatLngInputString = "-1,4"
+
   address = "#{row[4]}, #{row[5]}, #{row[6]}, #{row[3]}"
   features.push("Height adjustable adult-sized change table") if isYes(row[7])
   features.push("Electric ceiling hoist") if isYes(row[8])
@@ -28,9 +30,11 @@ CSV.foreach("changingPlaces.csv") do |row|
 
   otherInformation = features.join(", ")
   name = row[4]
-  locationLatLng = "NULL"
 
-  puts "INSERT INTO locations (address,locationLatLng,methodOfAccess,name,notes,openingHours,otherInformation) " +
+  latLngComponents = fakeLatLngInputString.split(",")
+  locationLatLng = "POINT(#{latLngComponents[0]},#{latLngComponents[1]})"
+
+  puts "INSERT INTO location (address,locationLatLng,methodsOfAccess,name,notes,openingHours,otherInformation) " +
   " VALUES ('#{address}',#{locationLatLng},'#{methodOfAccess}','#{name}','#{notes}','#{openingHours}','#{otherInformation}');"
 
 end
