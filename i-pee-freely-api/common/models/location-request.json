@@ -13,15 +13,11 @@
     "userAgent": {
       "type": "string"
     },
-    "requestedLocationLat": {
-      "type": "string",
-      "required": true
-    },
-    "requestLocationLong": {
-      "type": "string",
-      "required": true
-    },
     "currentLocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "requestedLocation": {
       "type": "geopoint",
       "required": true
     }

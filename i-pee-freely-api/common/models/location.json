@@ -11,14 +11,26 @@
       "type": "string",
       "required": true
     },
+    "methodsOfAccess": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "openingHours": {
+      "type": "string"
+    },
     "address": {
+      "type": "string",
+      "required": true
+    },
+    "otherInformation": {
       "type": "string"
     },
-    "lat": {
-      "type": "string"
-    },
-    "long": {
-      "type": "string"
+    "locationLatLng": {
+      "type": [
+        "number"
+      ]
     }
   },
   "validations": [],
