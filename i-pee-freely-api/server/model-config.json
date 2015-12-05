@@ -33,19 +33,19 @@
     "public": false
   },
   "feedback": {
-    "dataSource": "db",
+    "dataSource": "mySQL-Wordpress",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "location": {
-    "dataSource": "db",
+    "dataSource": "mySQL-Wordpress",
     "public": true,
     "$promise": {},
     "$resolved": true
   },
   "locationRequest": {
-    "dataSource": "db",
+    "dataSource": "mySQL-Wordpress",
     "public": true,
     "$promise": {},
     "$resolved": true

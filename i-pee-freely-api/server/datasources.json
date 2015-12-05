@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mySQL-Wordpress": {
+    "host": "localhost",
+    "port": 8889,
+    "url": "",
+    "database": "wordpress",
+    "password": "root",
+    "name": "mySQL-Wordpress",
+    "connector": "mysql",
+    "user": "root"
   }
 }

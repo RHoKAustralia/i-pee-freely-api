@@ -14,13 +14,11 @@
     "address": {
       "type": "string"
     },
-    "locationId": {
-      "type": "number",
-      "required": true
+    "lat": {
+      "type": "string"
     },
-    "point": {
-      "type": "geopoint",
-      "required": true
+    "long": {
+      "type": "string"
     }
   },
   "validations": [],

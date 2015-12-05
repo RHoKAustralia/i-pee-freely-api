@@ -7,23 +7,23 @@
     "validateUpsert": true
   },
   "properties": {
-    "locationRequestId": {
-      "type": "number",
-      "required": true
-    },
     "trackingId": {
       "type": "number"
     },
-    "requestedLocation": {
-      "type": "geopoint",
+    "userAgent": {
+      "type": "string"
+    },
+    "requestedLocationLat": {
+      "type": "string",
+      "required": true
+    },
+    "requestLocationLong": {
+      "type": "string",
       "required": true
     },
     "currentLocation": {
       "type": "geopoint",
       "required": true
-    },
-    "userAgent": {
-      "type": "string"
     }
   },
   "validations": [],
