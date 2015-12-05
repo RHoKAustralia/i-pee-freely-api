@@ -1,5 +1,10 @@
 <style>
 
+    div.opening-hours {
+        /* remove to re-enable opening hours */
+        display: none;
+    }
+
     body {
         background-color: black;
     }
@@ -180,9 +185,11 @@
                             </ul>
                             <h5>Method of access:</h5>
                             <p>MLAK key to use these facilities</p>
-                            <h5>Opening hours:</h5>
-                            <p>Fri - Sun : 6pm - 11pm</p>
-                            <p class="alert">Currently Closed</p>
+                            <div class="opening-hours">
+                                <h5>Opening hours:</h5>
+                                <p>Fri - Sun : 6pm - 11pm</p>
+                                <p class="alert">Currently Closed</p>
+                            </div>
                             <h5>Other information:</h5>
                             <p class="information">Entry: Free or Paid
                                 Sling: Requires you to bring your own.
