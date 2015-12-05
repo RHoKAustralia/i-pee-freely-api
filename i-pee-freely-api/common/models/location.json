@@ -28,9 +28,7 @@
       "type": "string"
     },
     "locationLatLng": {
-      "type": [
-        "number"
-      ]
+      "type": "geopoint"
     }
   },
   "validations": [],
