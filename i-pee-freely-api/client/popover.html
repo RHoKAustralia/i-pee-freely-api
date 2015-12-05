@@ -1,0 +1,196 @@
+<style>
+
+    body {
+        background-color: black;
+    }
+
+    .locationDetailsPopover {
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10pt;
+        border-top: 2.5px solid #4a90e2;
+        border-bottom: initial;
+    }
+
+    .locationDetailsPopover h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0070be;
+        margin-top: 0;
+    }
+
+    .locationDetailsPopover a.location-link {
+        color: #0070be;
+        font-style: 14px;
+    }
+
+    .locationDetailsPopover a.location-link > * {
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+
+    .locationDetailsPopover .location-outline-container {
+        padding-left: 40px;
+    }
+
+    .locationDetailsPopover button.feedback {
+        background-color: #4a90e2;
+        height: 31px;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+        font-size: 13px;
+        color: white;
+    }
+
+    .locationDetailsPopover h5 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #0070be;
+        margin-bottom: 4px;
+    }
+
+    .locationDetailsPopover p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .locationDetailsPopover .half-row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .locationDetailsPopover .half-row.centered {
+        text-align: center;
+    }
+
+    .locationDetailsPopover .half-row.left-border {
+        border-left: 1px solid rgba(155, 154, 155, 0.47);
+    }
+
+    .locationDetailsPopover button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+    }
+
+    .locationDetailsPopover p.information {
+        white-space: pre-line;
+        line-height: 1.4em;
+    }
+
+    @media only screen  {
+
+        .locationDetailsPopover {
+            width: 100%;
+        }
+
+
+        .locationDetailsPopover img.map,
+        .locationDetailsPopover button.feedback {
+            width: 66%;
+        }
+
+        .locationDetailsPopover .half-row {
+            width: 49%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    @media only screen and (max-width : 600px)   {
+        .locationDetailsPopover {
+            border-bottom: 2.5px solid #4a90e2;
+            border-top: initial;
+        }
+        .locationDetailsPopover, .locationDetailsPopover .half-row {
+            /* Weird hack to reverse block order */
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .locationDetailsPopover .half-row {
+            display: block;
+            /* Weird hack to reverse block order */
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            width: 100%;
+        }
+    }
+
+    @media only screen and (min-width : 768px)   {
+
+        .locationDetailsPopover {
+            box-shadow: 0px -0.5px 2px rgba(0, 0, 0, 0.5);
+            width: 630px;
+            border-top: initial;
+            border-bottom: initial;
+        }
+
+        .locationDetailsPopover img.map,
+        .locationDetailsPopover button.feedback {
+            width: 238px;
+        }
+
+        .locationDetailsPopover .half-row {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .locationDetailsPopover .half-row.centered {
+            text-align: center;
+        }
+
+        .locationDetailsPopover button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+    }
+
+</style>
+
+<html>
+    <head></head>
+    <body>
+        <div class="locationDetailsPopover">
+            <div class="container">
+                <div class="row">
+                    <div class="half-row centered">
+                        <h4>Toilet Facility Location</h4>
+                        <img class="map" src="http://s.afl.com.au/staticfile/AFL%20Tenant/AFL/Files/Stadium%20seating%20plans/2015-SCG-Map.jpg"/>
+                        <button class="feedback" type="button">Provide Feedback</button>
+                    </div>
+                    <div class="half-row left-border">
+                        <a class="location-link" href="#"><img src="location-icon.png"/><span class="location-link-text">Brunton Ave, Richmond VIC 3002</span></a>
+                        <div class="location-outline-container">
+                            <h5>Features:</h5>
+                            <ul>
+                                <li>Height adjustable adult-sized change table</li>
+                                <li>Electric ceiling hoist</li>
+                                <li>Shower</li>
+                            </ul>
+                            <h5>Method of access:</h5>
+                            <p>MLAK key to use these facilities</p>
+                            <h5>Opening hours:</h5>
+                            <p>Fri - Sun : 6pm - 11pm</p>
+                            <p class="alert">Currently Closed</p>
+                            <h5>Other information:</h5>
+                            <p class="information">Entry: Free or Paid
+                                Sling: Requires you to bring your own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
