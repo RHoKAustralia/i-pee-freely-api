@@ -1,0 +1,33 @@
+{
+  "name": "locationRequest",
+  "plural": "locationRequests",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "locationRequestId": {
+      "type": "number",
+      "required": true
+    },
+    "trackingId": {
+      "type": "number"
+    },
+    "requestedLocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "currentLocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "userAgent": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "feedback",
+  "plural": "feedback",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "feedbackId": {
+      "type": "number",
+      "required": true
+    },
+    "locationId": {
+      "type": "number",
+      "required": true
+    },
+    "dateTime": {
+      "type": "date",
+      "required": true
+    },
+    "comments": {
+      "type": "string"
+    },
+    "userAgent": {
+      "type": "string"
+    },
+    "trackingId": {
+      "type": "number",
+      "required": false
+    },
+    "accessibility": {
+      "type": "number",
+      "required": true
+    },
+    "cleanliness": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
