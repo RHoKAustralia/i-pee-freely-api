@@ -33,7 +33,7 @@
       "type": "number"
     },
     "locationRef": {
-      "type": "location",
+      "type": "number",
       "required": true
     }
   },

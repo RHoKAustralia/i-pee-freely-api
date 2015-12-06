@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="page-header">
+            <h1>Feedback</h1>
+          </div>
+          <div id="messages">
+
+          </div>
+          <form id="form">
+            <div class="form-group">
+              <label for="locID">Location ID</label>
+              <input type="text" class="form-control" id="locationRef" value="1">
+            </div>
+
+            <label>Overall Rating</label>
+
+            <div class="form-group" data-toggle="buttons">
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="overallRating" value="1" id="overallRatingOption1"> <img src="icon_terrible_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="overallRating" value="2" id="overallRatingOption2"> <img src="icon_bad_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="overallRating" value="3" id="overallRatingOption3"> <img src="icon_average_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="overallRating" value="4" id="overallRatingOption4"> <img src="icon_good_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="overallRating" value="5" id="overallRatingOption5"> <img src="icon_awesome_blue.png"/>
+              </label>
+            </div>
+
+            <label>Cleanliness</label>
+             <div class="form-group" data-toggle="buttons">
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="cleanRating" value="1" id="cleanRatingOption1"> <img src="icon_terrible_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="cleanRating" value="2" id="cleanRatingOption2"> <img src="icon_bad_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="cleanRating" value="3" id="cleanRatingOption3"> <img src="icon_average_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="cleanRating" value="4" id="cleanRatingOption4"> <img src="icon_good_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="cleanRating" value="5" id="cleanRatingOption5"> <img src="icon_awesome_blue.png"/>
+              </label>
+            </div>
+
+
+            <label>Accessibility</label>
+             <div class="form-group" data-toggle="buttons">
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="accessRating" value="1" id="accessibilityRatingOption1"> <img src="icon_terrible_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="accessRating" value="2" id="accessibilityRatingOption2"> <img src="icon_bad_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="accessRating" value="3" id="accessibilityRatingOption3"> <img src="icon_average_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="accessRating" value="4" id="accessibilityRatingOption4"> <img src="icon_good_blue.png"/>
+              </label>
+              <label class="image-toggler" data-image-id="#image1">
+                <input type="radio" name="accessRating" value="5" id="accessibilityRatingOption5"> <img src="icon_awesome_blue.png"/>
+              </label>
+            </div>
+
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea id="comments" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

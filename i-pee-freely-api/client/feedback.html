@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="page-header">
+            <h1>Feedback</h1>
+          </div>
+          <div id="messages">
+
+          </div>
+          <form id="form">
+            <div class="form-group">
+              <label for="locID">Location ID</label>
+              <input type="text" class="form-control" id="locationRef" value="1">
+            </div>
+            <div class="form-group">
+              <label for="overallRating">Overall Rating</label>
+              <input type="text" class="form-control" id="overallRating" value="1">
+            </div>
+            <div class="form-group">
+              <label for="cleanRating">Cleanliness</label>
+              <input type="text" class="form-control" id="cleanRating" value="1">
+            </div>
+            <div class="form-group">
+              <label for="accessRating">Accessibility</label>
+              <input type="text" class="form-control" id="accessRating" value="1">
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea id="comments" class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
